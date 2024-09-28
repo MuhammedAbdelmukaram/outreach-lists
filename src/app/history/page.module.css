@@ -1,0 +1,228 @@
+/* page.module.css */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #181C2E;
+    border-bottom: 1px solid #fff;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    margin-top: 6px;
+    margin-left: 14px;
+}
+
+.logout{
+    cursor: pointer;
+    margin-top: 6px;
+    margin-right: 14px;
+}
+
+/* Container for sidebar and content */
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: #181c2f;
+    height: calc(100vh - 80px);
+}
+
+/* page.module.css */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-right: 1px solid #fff;
+    background-color: #181c2f; /* Light background */
+    height: 100vh;
+    width: 50px; /* Set a fixed width for the sidebar */
+}
+
+.iconButton {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.iconButton:hover {
+    transform: scale(1.1); /* Scale up slightly on hover */
+}
+
+.iconButton[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 100;
+    opacity: 1;
+}
+
+.iconButton[data-tooltip]::after {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.iconButton img {
+    display: block;
+}
+
+
+.page h1 {
+    margin-bottom: 20px;
+}
+
+.batchList {
+    margin-bottom: 30px;
+}
+
+.batchButton {
+    background-color: #f0f0f0;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.batchButton:hover {
+    background-color: #ddd;
+}
+
+.batchButton.active {
+    background-color: #353a50;
+    color: white;
+}
+
+/* Follower List Styling */
+.followerTableContainer {
+    margin-top: 20px;
+    background-color: #181C2E;
+
+    border-radius: 5px;
+    color: white;
+}
+
+/* Table container to adjust layout */
+.tableContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Table styles */
+.followerTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #2a2d3e; /* Dark background for the table */
+}
+
+.followerTable th {
+    background-color: #353a50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.followerTable td {
+    background-color: #2a2d3e;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #353a50;
+}
+
+/* Checkbox styling */
+.checkbox {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: #00ff00;
+}
+
+/* Selected batch button styling */
+.batchButton {
+    background-color: #f0f0f0;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.batchButton:hover {
+    background-color: #ddd;
+}
+
+.batchButton.active {
+    background-color: #353a50;
+    color: white;
+}
+
+/* List and table heading */
+.listHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.listTitle {
+    font-size: 18px;
+}
+
+.newFollowersCount {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Table Header for batches */
+.followerTable th, .followerTable td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 14px;
+}
+
+.followerTable th {
+    background-color: #353a50;
+}
+
+.followerTable td {
+    background-color: #2a2d3e;
+    color: white;
+}
+
+
+.content{
+    margin-left: 200px;
+    margin-top: 40px;
+    padding: 20px;
+}
