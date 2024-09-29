@@ -8,7 +8,8 @@ import Follower from '@/app/models/Follower';
 import NewFollowerBatch from '@/app/models/NewFollowerBatch';
 import SeedUploadHistory from '@/app/models/SeedUploadHistory';
 
-const UPLOAD_DIR = path.resolve(process.env.ROOT_PATH ?? '', 'public/uploads');
+const UPLOAD_DIR = path.resolve('/tmp', 'uploads');
+
 
 export const revalidate = 0;
 export async function POST(req) {
