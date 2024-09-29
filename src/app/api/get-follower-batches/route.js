@@ -2,6 +2,8 @@
 import dbConnect from '@/app/lib/dbConnect';
 import NewFollowerBatch from '@/app/models/NewFollowerBatch';
 
+
+export const revalidate = 0;
 export async function GET(req) {
     try {
         await dbConnect();

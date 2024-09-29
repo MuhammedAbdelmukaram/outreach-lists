@@ -10,6 +10,7 @@ import SeedUploadHistory from '@/app/models/SeedUploadHistory';
 
 const UPLOAD_DIR = path.resolve(process.env.ROOT_PATH ?? '', 'public/uploads');
 
+export const revalidate = 0;
 export async function POST(req) {
     try {
         const formData = await req.formData();

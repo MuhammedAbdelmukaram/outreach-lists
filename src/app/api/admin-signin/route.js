@@ -4,6 +4,8 @@ import { SignJWT } from 'jose';
 import { TextEncoder } from 'util';
 import bcrypt from 'bcrypt';
 
+
+export const revalidate = 0;
 export async function POST(request) {
     await dbConnect();
 

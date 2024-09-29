@@ -3,6 +3,8 @@ import dbConnect from '@/app/lib/dbConnect';
 import SeedFollower from '@/app/models/SeedFollower';
 import SeedUploadHistory from '@/app/models/SeedUploadHistory';
 
+
+export const revalidate = 0;
 export async function GET() {
     try {
         await dbConnect();

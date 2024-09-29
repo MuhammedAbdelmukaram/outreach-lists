@@ -1,6 +1,7 @@
 import dbConnect from "@/app/lib/dbConnect";
 import Admin from "@/app/models/admin";
 
+export const revalidate = 0;
 export async function POST(request) {
 
     await dbConnect();
